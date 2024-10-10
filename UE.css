@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+.center-image {
+    width: 150px; /* Adjust width as necessary */
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto; /* Centers the image and adds space below */
+}
+
+.text-section p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px; /* Adds space between lines */
+    color: #333;
+}

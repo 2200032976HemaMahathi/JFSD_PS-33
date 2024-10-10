@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institution Profile</title>
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #d0eaff; /* Light blue background */
+            padding: 20px;
+        }
+
+        /* Institution Name */
+        .institution-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 40px; /* Space below the Institution name */
+        }
+
+        /* White Box with Thick Border */
+        .white-box {
+            background-color: white;
+            border: 3px solid black; /* Visibly thick border */
+            padding: 20px;
+            position: relative;
+            width: 80%;
+            margin-bottom: 40px; /* Space below the white box */
+        }
+
+        .white-box h2 {
+            font-size: 20px;
+            font-weight: bold;
+            position: absolute;
+            top: 20px;
+            right: 20px; /* Ongoing aligned to the top right corner */
+        }
+
+        .white-box p {
+            margin-top: 60px; /* Space to align the "No ongoing events" below the header */
+            font-size: 16px;
+            color: black;
+        }
+
+        /* Blue Box (Upcoming Events Button) */
+        .blue-box {
+            background-color: #1e90ff; /* Blue background */
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            width: 50%;
+            margin-bottom: 40px; /* Space below the blue box */
+            cursor: pointer;
+            text-decoration: none; /* Remove underline from link */
+        }
+
+        /* Image Row */
+        .image-row {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .image-row img {
+            width: 45%; /* Each image takes up 45% of the container width */
+            border-radius: 8px;
+        }
+
+        /* Submit button */
+        .submit-btn {
+            background-color: green;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .submit-btn:hover {
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <!-- Institution Name -->
+    <div class="institution-name">Institution Name</div>
+
+    <!-- White Box with Thick Border -->
+    <div class="white-box">
+        <h2>Ongoing</h2>
+        <p>No ongoing events</p>
+    </div>
+
+    <!-- Blue Box (Upcoming Events) -->
+    <a href="UE.html" class="blue-box">Click to see upcoming events</a>
+
+    <!-- Image Row -->
+    <div class="image-row">
+        <img src="images/image5.jpg" alt="Image 1">
+        <img src="images/image6.jpg" alt="Image 2">
+    </div>
+
+    <!-- Submit Button -->
+    <button class="submit-btn" onclick="redirectToInsDB()">Submit</button>
+
+    <!-- JavaScript to handle redirection -->
+    <script>
+        function redirectToInsDB() {
+            window.location.href = 'InsDB.html';
+        }
+    </script>
+
+</body>
+</html>

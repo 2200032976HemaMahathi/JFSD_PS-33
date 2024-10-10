@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Main container */
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        /* Title styling */
+        h1, h2 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Sub-heading styling */
+        h2 {
+            font-weight: bold;
+            margin-top: 30px;
+        }
+
+        /* Form section styling */
+        .form-section {
+            margin-top: 20px;
+        }
+
+        /* Label and input fields styling */
+        .form-group {
+            margin: 10px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form-group label {
+            width: 150px;
+            font-size: 14px;
+            text-align: right;
+            margin-right: 10px;
+        }
+
+        .form-group input[type="text"], .form-group select {
+            width: 200px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        /* Radio button styling */
+        .form-group input[type="radio"] {
+            margin-left: 10px;
+        }
+
+        /* Image placeholder */
+        .profile-img {
+            margin-bottom: 10px;
+        }
+
+        .profile-img img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 2px solid #ccc;
+        }
+
+        /* Save button styling */
+        .save-btn {
+            background-color: rgb(106, 182, 212);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .save-btn:hover {
+            background-color: rgb(47, 98, 174);
+        }
+
+        /* Flex container for side-by-side fields */
+        .flex-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        /* Label and input styling for inline sections */
+        .inline-form-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Profile Section -->
+        <h1>PROFILE</h1>
+
+        <div class="form-section">
+            <div class="profile-img">
+                <img src="images/imge4.jpg" alt="Profile Picture">
+            </div>
+            <div class="form-group">
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name">
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="text" id="dob" name="dob">
+            </div>
+            <div class="form-group">
+                <label>Gender:</label>
+                <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female"> Female
+                <input type="radio" name="gender" value="other"> Other
+            </div>
+            <button class="save-btn">SAVE</button>
+        </div>
+
+        <!-- Education Details Section -->
+        <h2>Education Details</h2>
+        <div class="form-section">
+            <div class="flex-container">
+                <div class="inline-form-group">
+                    <label for="qualification">Qualification:</label>
+                    <input type="text" id="qualification" name="qualification">
+                </div>
+                <div class="inline-form-group">
+                    <label for="school">School/College Name:</label>
+                    <input type="text" id="school" name="school">
+                </div>
+                <div class="inline-form-group">
+                    <label for="year">Year of Passing:</label>
+                    <input type="text" id="year" name="year">
+                </div>
+            </div>
+            <button class="save-btn">SAVE</button>
+        </div>
+
+        <!-- Hobbies/Extracurricular Section -->
+        <h2>Hobbys/Extracurricular Activities</h2>
+        <div class="form-section">
+            <div class="form-group">
+                <label for="hobby">Hobby:</label>
+                <input type="text" id="hobby" name="hobby">
+            </div>
+            <div class="form-group">
+                <label for="award">Award or Achievement:</label>
+                <input type="text" id="award" name="award">
+            </div>
+            <div class="form-group">
+                <label for="hobby-description">Description:</label>
+                <input type="text" id="hobby-description" name="hobby-description">
+            </div>
+            <button class="save-btn">SAVE</button>
+        </div>
+
+        <!-- Goals Section -->
+        <h2>Goals</h2>
+        <div class="form-section">
+            <div class="form-group">
+                <label for="goal">Goal:</label>
+                <input type="text" id="goal" name="goal">
+            </div>
+            <div class="form-group">
+                <label for="goal-description">Description:</label>
+                <input type="text" id="goal-description" name="goal-description">
+            </div>
+            <!-- Save button with redirection to dashboard.html -->
+            <button class="save-btn" onclick="redirectToDashboard()">SAVE</button>
+        </div>
+    </div>
+
+    <!-- JavaScript to handle redirection -->
+    <script>
+        function redirectToDashboard() {
+            window.location.href = 'dashboard.html';
+        }
+    </script>
+
+</body>
+</html>

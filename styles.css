@@ -1,0 +1,66 @@
+/* Styling for the entire page */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+/* Container for the login box */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Styling for the grey login box */
+.login-box {
+    background-color: #d3d3d3; /* Grey background */
+    padding: 40px;
+    width: 300px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+/* Title styling */
+.login-title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: black;
+}
+
+/* Input field styles */
+form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+form input[type="email"],
+form input[type="password"] {
+    width: 90%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Styling for the submit button container */
+.submit-box {
+    text-align: center;
+    background-color: yellow;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.submit-box input[type="submit"] {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}

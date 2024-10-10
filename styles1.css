@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 3cm; /* Ensure 3cm padding around the entire body */
+}
+
+.username {
+    position: absolute;
+    top: 0;
+    left: 3cm;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(5, 5, 5, 0.3);
+    position: absolute;
+    width: calc(100% - 10cm); /* Ensures the box is 10cm away from the left border */
+}
+
+.architecture {
+    top: 4cm; /* 1 inch (2.54cm) below the username */
+    left: 10cm;
+    bottom: 15cm; /* Ensures 5cm gap from the bottom */
+}
+
+.business {
+    top: calc(4cm + 20cm + 5cm); /* Position 5cm below the architecture box */
+    left: 10cm;
+
+}
+
+.image-container {
+    position: absolute;
+    bottom: 5cm;
+    left: 10cm;
+    display: flex;
+    flex-direction: column;
+    gap: 5cm;
+}
+
+.image-container img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
